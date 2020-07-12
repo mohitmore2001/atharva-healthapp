@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menupage"
+    tools:context=".Activities.MenuActivity">
+
+
+    <Button
+        android:id="@+id/covid19statusmenuid"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectanglemenu"
+        android:text="COVID-19 STATUS" />
+
+    <Button
+        android:id="@+id/selfassmenuid"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/covid19statusmenuid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectanglemenu"
+        android:text="SELF ASSESSMENT " />
+
+    <Button
+        android:id="@+id/healthhistormenuid"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selfassmenuid"
+        android:background="@drawable/rectanglemenu"
+        android:text="HEALTH ANALYSIS " />
+
+    <Button
+        android:id="@+id/redzonemenusid"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/healthhistormenuid"
+        android:background="@drawable/rectanglemenu"
+        android:layout_marginTop="10dp"
+        android:text="RED ZONES " />
+
+    <Button
+        android:id="@+id/emergencymenyid"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/redzonemenusid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectanglemenu"
+        android:text="EMERGENCY HELPLINE " />
+</RelativeLayout>

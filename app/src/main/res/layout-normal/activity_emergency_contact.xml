@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47028A0F"
+    tools:context=".Activities.EmergencyContactActivity">
+    <ImageView
+        android:id="@+id/imagemeergency"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/emergencyone"
+        android:layout_below="@+id/centralnocallemergencyid"/>
+    <LinearLayout
+        android:id="@+id/linearemergency"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imagemeergency"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/emergencytwo" />
+        <EditText
+            android:id="@+id/enterstatephoneno"
+            android:layout_width="240dp"
+            android:layout_height="44dp"
+            android:background="@drawable/rectangle"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Search the name of the state"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/searchstateemergencycallsbuttonid"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/baseline_search_black_18dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearemergency"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/rectangle">
+        </ImageView>
+        <TextView
+            android:id="@+id/noticetextid"
+            android:layout_width="222dp"
+            android:layout_height="111dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="If someone is showing any signs of CoronaVirus , seek emergency medical care immediately. \nClick to call"
+            android:textColor="@color/Pink"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/displayphonenoid"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="#00C4C4C4"
+            android:layout_below="@+id/noticetextid"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Central Helpline Number"
+        android:textColor="@color/White"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/centralnocallemergencyid"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:text="+91-11-23978046"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:background="#00028A0F" />
+
+</RelativeLayout>

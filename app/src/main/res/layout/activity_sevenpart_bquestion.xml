@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfAssismentQuestions.sevenpartBquestion"
+    android:background="@drawable/questionnairquestions">
+
+    <TextView
+        android:id="@+id/questionbseven"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Are you having any chronic illness as listed below?(Part Two)"
+        android:textSize="23dp" />
+
+    <CheckBox
+        android:id="@+id/sevenboneweakened"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionbseven"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="cursive"
+        android:text="Weakened Immune System From Solid Organ Transplants"
+        android:textColor="@color/Pink"
+        android:textSize="22dp" />
+
+    <CheckBox
+        android:id="@+id/sevenbtwoasthama"
+        android:layout_below="@+id/sevenboneweakened"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/Pink"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asthma" />
+
+    <CheckBox
+        android:id="@+id/sevenbthreeliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Pink"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:text="Liver Disease"
+        android:textSize="22dp"
+        android:layout_below="@id/sevenbtwoasthama"/>
+
+    <CheckBox
+        android:id="@+id/sevenbfourChronicLung"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sevenbthreeliver"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:text="Chronic Lung Diseases Such As Cystic Fibrosis"
+        android:textColor="@color/Pink"
+        android:textSize="22dp" />
+    <CheckBox
+        android:id="@+id/sevenbnoneofthese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@id/sevenbfourChronicLung"
+        android:text="None Of These" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/forwardsevenb"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/forwardbutton" />
+
+
+</RelativeLayout>

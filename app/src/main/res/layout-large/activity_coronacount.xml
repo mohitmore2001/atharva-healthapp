@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7FAC3"
+    tools:context=".CoronaCount.coronacount">
+    <ImageView
+        android:id="@+id/imagecoronacount"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:src="@drawable/coronacountone"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/coronainindia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Corona In India"
+        android:fontFamily="cursive"
+        android:layout_below="@id/imagecoronacount"
+        android:textSize="30dp"
+        android:textColor="@color/Black"/>
+
+
+    <RelativeLayout
+        android:id="@+id/linearcoronaone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/coronainindia">
+
+        <TextView
+            android:id="@+id/countcoronaindia"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Purple"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/countactiveindia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Orange"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/countcoronaindia"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/countrecovrerdindia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGreen"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/countactiveindia"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/countdeathindia"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/countrecovrerdindia"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearcoronatwo"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearcoronaone">
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emergencytwo"/>
+        <EditText
+            android:id="@+id/enterstatenameid"
+            android:layout_width="240dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/rectanglecoronacount"
+            android:ems="11"
+            android:gravity="center"
+            android:hint="@string/enterstatehint"
+            android:inputType="textAutoCorrect|textCapWords" />
+        <Button
+            android:id="@+id/searchbuttonofstate"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="@drawable/baseline_search_black_18dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayouttwo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/linearcoronatwo">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/rectangle"/>
+        <TextView
+            android:id="@+id/statecoronaActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SkyBule"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/statecoronarecovered"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/statecoronarecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGreen"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/statecoronadeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/statecoronarecovered"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeLayouttwo"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:text=" @Central Helpline Number for corona-virus:"/>
+        <Button
+            android:id="@+id/centralHelpline"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="#00F1F1F1"
+            android:backgroundTint="#00B81717"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView5"
+            android:text="+91-11-23978046"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

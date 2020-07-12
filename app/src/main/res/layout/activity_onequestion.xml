@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SelfAssismentQuestions.onequestion"
+    android:background="@drawable/questionnair">
+
+    <TextView
+        android:id="@+id/questionone"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/Black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="The new place you’re residing at, is it crowded?"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupone"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#000C3031">
+
+        <RadioButton
+            android:id="@+id/yesone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="22dp"
+            android:textColor="@color/Pink"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/noone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="22dp"
+            android:textColor="@color/Pink"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/forwardone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/forwardbutton" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfAssismentQuestions.sevenpartCquestion"
+    android:background="@drawable/questionnairquestions">
+
+    <TextView
+        android:id="@+id/questioncseven"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Are you having any chronic illness as listed below?(Part Three)"
+        android:textSize="23dp" />
+
+    <CheckBox
+        android:id="@+id/sevenconebraincondition"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questioncseven"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="cursive"
+        android:text="Brain And Nervous System Conditions"
+        android:textColor="@color/Pink"
+        android:textSize="22dp" />
+
+    <CheckBox
+        android:id="@+id/sevenctwoweakimmunesystem"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sevenconebraincondition"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:text="HIV or some medications"
+        android:textColor="@color/Pink"
+        android:textSize="22dp" />
+
+    <CheckBox
+        android:id="@+id/sevencthreetype1dibetis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Pink"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:text="Type 1 Diabetes"
+        android:textSize="22dp"
+        android:layout_below="@id/sevenctwoweakimmunesystem"/>
+
+    <CheckBox
+        android:id="@+id/sevencfourhighblood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/Pink"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:layout_below="@id/sevencthreetype1dibetis"
+        android:text="High blood pressure" />
+    <CheckBox
+        android:id="@+id/sevencnoneofthese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@id/sevencfourhighblood"
+        android:text="None Of These" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/forwardsevenc"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/forwardbutton" />
+
+
+</RelativeLayout>

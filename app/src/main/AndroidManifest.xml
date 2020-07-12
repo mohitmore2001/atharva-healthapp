@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ibmproject">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <supports-screens
+        android:largeScreens="true"
+        android:anyDensity="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SelfAssismentQuestions.ninefivequestion" />
+        <activity android:name=".SelfAssismentQuestions.eightfourquestion" />
+        <activity android:name=".SelfAssismentQuestions.sevenpartCquestion" />
+        <activity android:name=".SelfAssismentQuestions.sevenpartBquestion" />
+        <activity android:name=".SelfAssismentQuestions.sevenquestion" />
+        <activity android:name=".SelfAssismentQuestions.sixquestion" />
+        <activity android:name=".SelfAssismentQuestions.fivequestion" />
+        <activity android:name=".SelfAssismentQuestions.fourquestion" />
+        <activity android:name=".SelfAssismentQuestions.threequestion" />
+        <activity android:name=".SelfAssismentQuestions.twoquestion" />
+        <activity android:name=".SelfAssismentQuestions.onequestion" />
+        <activity android:name=".Activities.EmergencyContactActivity" />
+        <activity android:name=".Activities.HealthHistoryActivity" />
+        <activity android:name=".Activities.MenuActivity" />
+        <activity android:name=".Activities.CreateAccountActivity" />
+        <activity android:name=".CoronaCount.coronacount" />
+        <activity android:name=".Activities.cityActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

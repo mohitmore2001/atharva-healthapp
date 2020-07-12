@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfAssismentQuestions.fivequestion"
+    android:background="@drawable/questionnairquestions">
+
+    <TextView
+        android:id="@+id/questionfive"
+        android:layout_width="286dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="50dp"
+        android:text="In the last 48 hours have you had any symptoms listed below?"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/fiveonefever"
+        android:layout_below="@+id/questionfive"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever" />
+
+    <CheckBox
+        android:id="@+id/fivetwocough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:text="Cough"
+        android:layout_below="@id/fiveonefever"/>
+
+    <CheckBox
+        android:id="@+id/fivethreebreathlessness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_below="@id/fivetwocough"
+        android:text="Breathlessness" />
+    <CheckBox
+        android:id="@+id/fivefourTiredness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_below="@id/fivethreebreathlessness"
+        android:text="Tiredness" />
+    <CheckBox
+        android:id="@+id/fivefiveLossoftastesmell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_below="@id/fivefourTiredness"
+        android:text="Loss of Taste/Smell" />
+    <CheckBox
+        android:id="@+id/fivenoneofthese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@id/fivefiveLossoftastesmell"
+        android:text="None Of These" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/forwardfive"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/forwardbutton" />
+
+
+</RelativeLayout>

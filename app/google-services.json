@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "294877980891",
+    "firebase_url": "https://covid-info-and-health-care.firebaseio.com",
+    "project_id": "covid-info-and-health-care",
+    "storage_bucket": "covid-info-and-health-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294877980891:android:0f414ec8218663d1dec4fe",
+        "android_client_info": {
+          "package_name": "com.example.ibmproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294877980891-nlopvgsocinur8c6ja52pa89rudifn0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ibmproject",
+            "certificate_hash": "d271d503912e944637f22daaf8e33650789d5e5a"
+          }
+        },
+        {
+          "client_id": "294877980891-7jjn53hbeaf5n34dd9o2voc5m1im9ast.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2GHO8IQDthjH8c9oxiw5mtJJvcob8YpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294877980891-7jjn53hbeaf5n34dd9o2voc5m1im9ast.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

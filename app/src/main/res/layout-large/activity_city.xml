@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B0086AD"
+    tools:context=".Activities.cityActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/imagered"
+        android:src="@drawable/redzoneone"
+        android:layout_marginTop="5dp"/>
+
+    <ScrollView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagered"
+        android:background="@drawable/rectangle"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/searchiconredzone" />
+
+                <EditText
+                    android:id="@+id/entercityredzones"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangleforgetpassword"
+                    android:gravity="center"
+                    android:hint="Enter Name of City"
+                    android:inputType="textAutoCorrect|textCapWords"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/searchcity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/baseline_search_black_18dp" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/redzonestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/Red"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

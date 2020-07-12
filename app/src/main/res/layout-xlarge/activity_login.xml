@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#23E9E6"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/imagelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/login"/>
+
+    <EditText
+        android:id="@+id/usernamelogin"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/rectangleloginuser"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Username"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/usernamelogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangleloginuser"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:gravity="center"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/forgetpassbuttonid"
+        android:layout_width="152dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/passwordlogin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangleloginuser"
+        android:text="Forgot Password?" />
+
+    <Button
+        android:id="@+id/letsgobuttonid"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/forgetpassbuttonid"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangleforgetpassword"
+        android:text="Lets Go : )" />
+    <TextView
+        android:id="@+id/ortextid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_below="@+id/letsgobuttonid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/createaccbuttonloginid"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="Create an account !!"
+        android:layout_below="@+id/ortextid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangleforgetpassword" />
+
+
+</RelativeLayout>

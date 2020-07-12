@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/healthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/Purple"
+        android:textSize="20dp"
+        android:text="Date"/>
+    <TextView
+        android:id="@+id/healthinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Percentage"
+        android:layout_below="@+id/healthdate"
+        android:textColor="@color/Pink"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/healthstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/healthinfo"
+        android:textColor="@color/Red"
+        android:textSize="20dp"
+        android:text="Status"/>
+
+
+
+</RelativeLayout>

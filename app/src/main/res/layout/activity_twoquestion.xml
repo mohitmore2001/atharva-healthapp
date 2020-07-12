@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfAssismentQuestions.twoquestion"
+    android:background="@drawable/questionnairquestions">
+
+    <TextView
+        android:id="@+id/questiontwo"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="50dp"
+        android:text="If yes, did you recently go out to buy anything?"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogrouptwo"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questiontwo"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:background="#000C3031">
+
+        <RadioButton
+            android:id="@+id/yestwo"
+            android:layout_width="match_parent"
+            android:fontFamily="cursive"
+            android:textSize="22dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Pink"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/notwo"
+            android:layout_width="match_parent"
+            android:fontFamily="cursive"
+            android:textSize="22dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Pink"
+            android:text="No" />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/forwardtwo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/forwardbutton" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SelfAssismentQuestions.sevenquestion"
+android:background="@drawable/questionnairquestions">
+
+<TextView
+    android:id="@+id/questionaseven"
+    android:layout_width="286dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="45dp"
+    android:textColor="@color/Black"
+    android:layout_marginTop="50dp"
+    android:fontFamily="sans-serif-smallcaps"
+    android:text="Are you having any chronic illness as listed below?(Part One)"
+    android:textSize="23dp" />
+
+<CheckBox
+    android:id="@+id/sevenaoneseriousdiseases"
+    android:layout_below="@+id/questionaseven"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="45dp"
+    android:textColor="@color/Pink"
+    android:fontFamily="cursive"
+    android:textSize="22dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Serious Heart Diseases" />
+
+<CheckBox
+    android:id="@+id/sevenatwoCOPD"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Pink"
+    android:layout_marginLeft="45dp"
+    android:fontFamily="cursive"
+    android:text="Chronic obstructive pulmonary disease(COPD)"
+    android:textSize="22dp"
+    android:layout_below="@id/sevenaoneseriousdiseases"/>
+
+<CheckBox
+    android:id="@+id/sevenathreetype2dibetis"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="45dp"
+    android:textColor="@color/Pink"
+    android:fontFamily="cursive"
+    android:textSize="22dp"
+    android:layout_below="@id/sevenatwoCOPD"
+    android:text="Type 2 Diabetes" />
+<CheckBox
+    android:id="@+id/sevenafourseverobesity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="45dp"
+    android:fontFamily="cursive"
+    android:textSize="22dp"
+    android:textColor="@color/Pink"
+    android:layout_below="@id/sevenathreetype2dibetis"
+    android:text="Severe Obesity" />
+<CheckBox
+    android:id="@+id/sevenafiveChronic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Pink"
+    android:layout_marginLeft="45dp"
+    android:textSize="22dp"
+    android:fontFamily="cursive"
+    android:layout_below="@id/sevenafourseverobesity"
+    android:text="Chronic Kidney Disease" />
+    <CheckBox
+        android:id="@+id/sevennoneofthese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        android:textColor="@color/Pink"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@id/sevenafiveChronic"
+        android:text="None Of These" />
+
+    <Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/forwardseven"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/forwardbutton" />
+
+
+</RelativeLayout>
